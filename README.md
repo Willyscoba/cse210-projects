@@ -1,8 +1,8 @@
 # cse210-ww-student-template
-Williams Okorie Simeon
+Williams Okorie Simeon.
 This is the starter code for students in the worldwide content version of CSE 210.
 
-This repository contains the starter code for many different projects. They are arranged as follows:
+This repository contains the starter codSe for many different projects. They are arranged as follows:
 
 * `sandbox` - An empty project that you can use to play around with any concepts you like.
 * `csharp-prep` - Starter projects for each of the C# Prep assignments.
