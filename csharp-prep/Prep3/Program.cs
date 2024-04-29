@@ -5,9 +5,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        //For the first and second part where the user have to provide the magic number...
         //Note: You can't run both codes together, put first and second part in a comment mode, before running the 3rd part
-        //also, put the 3rd part in a comment mode before running the first part. 
+        //also, put the 3rd part in a comment mode before running the first part.
+        //For the first and second part where the user have to provide the magic number...
         Console.Write("What is the magic number? ");
         int magicNumber = int.Parse(Console.ReadLine());
 
