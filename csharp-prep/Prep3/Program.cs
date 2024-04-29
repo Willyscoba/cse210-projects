@@ -6,28 +6,30 @@ class Program
     static void Main(string[] args)
     {
         //For the first and second part where the user have to provide the magic number...
-        //Console.Write("What is the magic number? ");
-        //int magicNumber = int.Parse(Console.ReadLine());
+        //Note: You can't run both codes together, put first and second part in a comment mode, before running the 3rd part
+        //also, put the 3rd part in a comment mode before running the first part. 
+        Console.Write("What is the magic number? ");
+        int magicNumber = int.Parse(Console.ReadLine());
 
-        //while (true)
-        //{
-            //Console.Write("What is your guess? ");
-            //int guess = int.Parse(Console.ReadLine());
+        while (true)
+        {
+            Console.Write("What is your guess? ");
+            int guess = int.Parse(Console.ReadLine());
 
-            //if (guess < magicNumber)
-            //{
-                //Console.WriteLine("Higher");
-            //}
-            //else if (guess >magicNumber)
-            //{
-                //Console.WriteLine("Lower");
-            //}
-            //else
-            //{
-                //Console.WriteLine("You guessed it!");
-                //break;
-            //}
-        //}
+            if (guess < magicNumber)
+            {
+                Console.WriteLine("Higher");
+            }
+            else if (guess >magicNumber)
+            {
+                Console.WriteLine("Lower");
+            }
+            else
+            {
+                Console.WriteLine("You guessed it!");
+                break;
+            }
+        }
 
         //for the 3rd part.
         
