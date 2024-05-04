@@ -35,12 +35,12 @@ class JournalManager
     private void SetupReminder()
     {
         reminderTimer = new System.Timers.Timer();
-        reminderTimer.Interval = TimeSpan.FromHours(24).TotalMilliseconds;
+        reminderTimer.Interval = TimeSpan.FromSeconds(30).TotalMilliseconds;
         reminderTimer.Elapsed += ReminderElapsed;
         reminderTimer.AutoReset = true;
         reminderTimer.Start();
     }
-    private void ReminderElapsed(object sender, System.Timers.ElapsedEventArgs e)
+    private void ReminderElapsed(object sender, ElapsedEventArgs e)
     {
         Console.WriteLine("Don't forget to write in your journal today!");
     }
@@ -163,6 +163,7 @@ class Program
                     Console.WriteLine("Invalid option. please try again.");
                     break;
             }
+            Console.ReadLine();
         }
     }
 }
