@@ -1,0 +1,14 @@
+Encapsulation is the process of enveloping something, as if it were in a container.
+it is a fundamental concept in object-oriented programming that refers to the grouping of data and  the methods that operate on that data into a single class.
+The key idea behind encapsulation is to hide the internal state and implementation details of an object from the outside world and to only expose the necessary
+functionality through well defined interfaces. This allows for better control over how data is accessed and modified, enhencing the maintainability of the code.
+In encapsulation, the internal state of an object is totally kept private.
+
+Benefits of Encapsulation:
+1. Information Hiding: Encapsulation hides the internal details of an object's implementation from the outside world. By restricting direct access to an object's data,
+encapsulation prevents unauthorized manipulation , reducingmthe risk of bugs and making it easier to maintain and evolve the cde over time.
+2. Data integrity: encapsulation provides contol access to data through the methods called 'Getters and Setters', it allows for enforcing constrains and validations of
+on data manipulation.
+3. Modularity: Encapsulation promots modularity by grouping related data and functions together within a class. this makes it easier to organize and maintain code,
+as changes to one part of the code are less likely to have unintended consequences on other parts.
+4. Abstraction: Encapsulation allows developers to create abstract data types that pevent real-world entities, hiding the complexity of their implementation.
