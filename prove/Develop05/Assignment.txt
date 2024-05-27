@@ -1,0 +1,21 @@
+Name: Give talk
+Description: Speak in Devotion when asked
+Completed: False
+Type: Simple
+Points: 60
+
+Name: Attend Church
+Description: Attend for sanitation
+Completed: False
+Type: Eternal Goal
+Points: 100
+
+Name: Exercise
+Description: Do morning exercise
+Completed: False
+Type: Checklist
+Target Count: 3
+Points per Event: 150
+Bonus Points: 400
+Completed Count: 0
+
