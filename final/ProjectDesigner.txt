@@ -1,0 +1,117 @@
+For Program 1: Abstraction with YouTube Videos
++----------------------------------+          +------------------------+
+|             Program              |          |         Comment        |
++----------------------------------+          +------------------------+
+| - Main(string[] args)            |          | - CommenterName: string |
++----------------------------------+          | - CommentText: string   |
+                                              | + Comment(commenterName,|
+                                              |          commentText)   |
+                                              +-------------------------+
++----------------------------------+          +--------------------------+
+|              Video               |          |         List<Comment>    |
++----------------------------------+          +--------------------------+                      
+| - Title: string                  |          | - Comments: List<Comment>|
+| - Author: string                 |          +--------------------------+
+| - Length: int                    |
+| - Comments: List<Comment>        |
++----------------------------------+
+| + Constructor                    |
+| + Video(title, author, length)   |
+| + AddComment(commenterName,      |
+|    commentText)                  |
+| + NumComments(): int             |
+| + GetComments(): List<Comment>   |
++----------------------------------+
+
+In the above Diagram:
+1. The 'Program' class represents the entry point of the program.
+2. The 'Video' class encapsulates video-related information such as title, author, length, and comments.
+3. The 'Comment' class represents a comment with attributes 'CommenterName' and 'CommentText'.
+4. The association between 'Video' and 'Comment' is represented by the 'comments' property in the 'Video' class, 
+   which is a list of 'Comment' objects.
+5. The behaviors of each class are represented as methods ('AddComment', 'NumComments', 'GetComments') and constructors ('Video', 'Comment').
+
+
+For Program 2: Encapsulation with Online Ordering
++---------------------------------------+       +---------------------------------------+       +---------------------------------------+
+|                Address                |       |              Customer                 |       |               Product                 |
++---------------------------------------+       +---------------------------------------+       +---------------------------------------+
+| - streetAddress: string               |       | - name: string                        |       | - name: string                        |
+| - city: string                        |       | - address: Address                    |       | - productId: string                   |
+| - state: string                       |       +---------------------------------------+       | - price: double                       |
+| - country: string                     |       | + Customer(name: string,             |        | - quantity: int                       |
++---------------------------------------+       |   address: Address)                   |       +---------------------------------------+
+| + Address(streetAddress: string,     |       | + IsInUSA(): bool                     |        | + Product(name: string,               |
+|   city: string, state: string,       |       | + GetName(): string                   |        |   productId: string, price: double,   |
+|   country: string)                    |       | + GetAddress(): string                |       |   quantity: int)                      |
+| + IsInUSA(): bool                     |       +---------------------------------------+       | + GetTotalCost(): double              |
+| + GetFullAddress(): string            |                                                       | + GetName(): string                   |
++---------------------------------------+                                                       | + GetProductId(): string              |
+                                                                                                +---------------------------------------+                                                                              
++---------------------------------+  +---------------------------------+
+|              Order              |  |            Program              |
++---------------------------------+  +---------------------------------+
+| - customer: Customer            |  | Main(args: string[])            |
+| - products: List<Product>       |  +---------------------------------+
++---------------------------------+  |                                 |
+| + Order(customer: Customer,     |  |                                 |
+|         products: List<Product>)|  |                                 |
+| + CalculateTotalCost(): double  |  |                                 |
+| + GetPackingLabel(): string     |  |                                 |
+| + GetShippingLabel(): string    |  |                                 |
++---------------------------------+  +---------------------------------+
+
+
+For Program 3: Inheritance with Event Planning:
++---------------------------------------+                              +---------------------------------------+        
+|                Address                |                              |               Event                   |
++---------------------------------------+                              +---------------------------------------+
+| - streetAddress: string               |                              | - title: string                       |
+| - city: string                        |                              | - description: string                 |
+| - state: string                       |                              | - date: string                        |
+| - country: string                     |                              | - address: Address                    |
++---------------------------------------+                              +---------------------------------------+
+| + Address(streetAddress: string,      |                              | + Constructor                         |
+| + Productname: string,                |                              | + Get Standard details:  string       |
+|   city: string, state: string,        |                              | + Get Full details: string            |
+|   country: string)                    |                              | + GetTotalCost(): double              |                     
+| + IsInUSA(): bool                     |                              +---------------------------------------+
+| + GetFullAddress(): string            |                                                  
++---------------------------------------+                                                           
+                                                    
++------------------------------+       +-------------------------+       +---------------------------+
+|                Lecture       |       |     Reception           |       |       Outdoor             |
++------------------------------+       +-------------------------+       +---------------------------+
+| - Speaker: string            |       | - Email: string         |       | - weather: string         |
+| - Capacity: int              |       +-------------------------+       +---------------------------+
+| - state: string              |       | + Constructor           |       | + Constructor             |
+| - country: string            |       +-------------------------+       +---------------------------+
++------------------------------+               
+| + Constructor                |                                        
++------------------------------+
+
+
+For Program 4: Polymorphism with Exercise Tracking
+
+                             +---------------------------------------+        
+                             |               Activity                |
+                             +---------------------------------------+
+                             | - date: string                        |
+                             | - minutes: string                     |
+                             +---------------------------------------+
+                             | + Constructor                         |
+                             | + Get Activity Summary:  string       |
+                             | + Get Distance                        |
+                             | + Get Pace                            |
+                             | + Get Speed                           |                
+                             +---------------------------------------+                                                         
+                                                    
++------------------------------+       +-------------------------+       +---------------------------+
+|          Running             |       |        Biking           |       |       Swimming            |
++------------------------------+       +-------------------------+       +---------------------------+
+| - Distance: double           |       | - Speed: double         |       | - laps: int               |
++------------------------------+       +-------------------------+       +---------------------------+
+| + Constructor                |       | + Constructor           |       | + Constructor             |
++------------------------------+       +-------------------------+       +---------------------------+
+              
+ 
